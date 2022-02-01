@@ -8,11 +8,5 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: npm install -g bats
-      - run: bats -v
-      - run: docker ps
-      - run: docker run hello-world
-      - run: docker ps
-      - run: echo "teste echo" >> test.txt
-      - run: cat test.txt
-      - run: terraform --version
+      - run: terraform init
+      - run: terraform plan
