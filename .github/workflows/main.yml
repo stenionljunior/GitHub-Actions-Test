@@ -13,3 +13,5 @@ jobs:
       - run: docker ps
       - run: docker run hello-world
       - run: docker ps
+      - run: echo "teste echo" >> test.txt
+      - run: cat test.txt
