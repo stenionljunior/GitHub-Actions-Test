@@ -15,3 +15,4 @@ jobs:
       - run: docker ps
       - run: echo "teste echo" >> test.txt
       - run: cat test.txt
+      - run: terraform --version
