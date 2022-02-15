@@ -9,7 +9,6 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - shell: bash
       - run: echo "teste github" >> test.txt
       - run: cat test.txt
       - run: sudo apt-get install awscli -y
