@@ -10,3 +10,4 @@ jobs:
           node-version: '14'
       - run: echo "teste github" >> test.txt
       - run: cat test.txt
+      - run: aws s3 ls
