@@ -4,11 +4,7 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
       - run: echo "teste github" >> test.txt
       - run: cat test.txt
       - run: sudo apt-get install awscli -y
-      - run: aws s3 ls
+      - run: aws --version
