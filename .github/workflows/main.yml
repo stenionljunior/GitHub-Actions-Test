@@ -13,7 +13,8 @@ jobs:
     steps:
     - name: Print 
       uses: actions/checkout@v1
-    - run: echo ${{ secrets.teste }}
+    - run: mkdir ${{ secrets.teste }}
+    - run: ls
     - name: Check out code
       uses: actions/checkout@v1
     - run: aws s3 ls
