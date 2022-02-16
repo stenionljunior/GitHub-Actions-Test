@@ -13,4 +13,4 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@v1
-    - run: docker ps
+    - run: aws --version
