@@ -14,7 +14,7 @@ jobs:
     - name: Print 
       uses: actions/checkout@v1
     - run: mkdir ${{ secrets.teste }}
-    - run: ls
+    - run: cat ./test.txt
     - name: Check out code
       uses: actions/checkout@v1
     - run: aws s3 ls
